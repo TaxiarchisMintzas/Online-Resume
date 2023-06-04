@@ -2,46 +2,70 @@ BODY{
     padding: 0 16px;
     margin: 0;
 }
+h1{
+    font-size: 2.8vw;
+}
+h2{
+    font-size: 2vw;
+}
+h3{
+    font-size: 1.6vw;
+}
+p, a, li{
+    font-size: 1.1vw;
+}
 
 hr{
     opacity: 50%;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
-}
-
-h3{
-    font-size: x-large;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.104);
 }
 
 header{
     background-color: rgb(210, 208, 208);
     margin: auto -16px;
-    padding: 16px 32px;
+    padding: 0px 56px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
-.creation{
-    float: right;
-    margin-right: 30px;
+
+/* flex-direction-column */
+#header, #creation, #skills-div, #education-div, #experience-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* flex-container-row */
+#under-header, #summary-content, #skills, #education-div > div, #experience-div > div{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+.content-center{
+    justify-content: center;
 }
 
 .general{
-    margin: 25px 0 25px 30px;
+    margin: 25px 0 25px 40px;
 }
 
-.holder{
-    display: flex;
+.name{
+    height: 60px;
 }
-
+.creation{
+    margin: 0;
+    color: rgb(53, 52, 52);
+}
 .contact{
-    position: absolute;
-    right: 0;
-    margin-right: 65px;
+    margin-right: 70px;
 }
 
 .contact a{
     text-decoration: none;
     color: black;
 }
-
 .contact a:hover{
     color: rgb(173, 12, 12);
 }
@@ -49,40 +73,46 @@ header{
     display: block;
     margin-bottom: 15px;
 }
-
 .contactlinks i{
     margin-right: 10px;
 }
-.firstdiv{
-    float: left;
-    width: 30%;
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.seconddiv{
-    float: left;
-    width: 30%;
-    margin-left: 50px;
+.summary{
+    width: 60%;
+    max-width: 50%;
+}
+.summary p{
+    margin-left: 20px;
+    width: 60%;
+}
+.mrg-left{
+    margin-left: 20px;
 }
 
+.skills{
+    justify-content: space-evenly;
+    margin-left: -40px;
+}
 .skillsh3{
     margin-bottom: 0;
 }
-
 .skills-list{
-    list-style-type: none
+    list-style-type: none;
+    padding: 0;
 }
-
 .skills-list li{
     margin: 8px;
 }
 
 .date{
-    float: left;
     width: 10%;
     font-weight: bold;
 }
 .details{
-    float: left;
     width: 40%;
     margin-left: 20px;
 }
@@ -93,22 +123,27 @@ header{
 
 .undertitle{
     margin-top: 0;
+    margin-bottom: 0;
+}
+.more-details{
+    color: rgb(169, 169, 169);
+    margin: 0;
 }
 .source{
     float: left;
     width: 40%;
 }
 
-.pdf{
-    position: absolute;
-    right: 0;
-    margin-right: 65px;
+.end{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-right: 35px;
 }
-
 .pdf a{
     text-decoration: none;
+    color: black;
 }
-
 .pdf a:visited{
     color: rgb(0, 0, 0);
 }
@@ -122,4 +157,70 @@ footer{
     justify-content: center;
     background-color: rgb(210, 208, 208);
     margin: auto -16px;
+}
+
+
+@media (max-width: 480px){
+    /* flex-direction-column */
+    #header, #under-header, #summary-content, #skills, #education-div > div, #experience-div > div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* flex-container-row */
+    .skills > div{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .name{
+        height: 50px;
+    }
+
+    h1{
+        font-size: 7vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 4.8vw;
+    }
+    p, a, li{
+        font-size: 3.3vw;
+    }
+
+    header{
+        height: 140px;
+    }
+
+    .summary{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .summary p{
+        width: 80%;
+    }
+
+    .contact a{
+        margin-left: 20px;
+    }
+
+    #skills-mobile{
+        flex-basis: 80px;
+
+    }
+    .skills-list{
+        margin-bottom: 20px;
+    }
+
+    .date{
+        width: 100%;
+    }
+    .details{
+        width: 90%;
+    }
 }
