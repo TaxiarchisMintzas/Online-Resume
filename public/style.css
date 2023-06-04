@@ -1,3 +1,68 @@
+@media (max-width: 480px){
+    /* flex-direction-column */
+    #header, #under-header, #summary-content, #skills, #education-div > div, #experience-div > div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* flex-container-row */
+    .skills{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .name{
+        height: 50px;
+    }
+
+    h1{
+        font-size: 7vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 4.8vw;
+    }
+    p, a, li{
+        font-size: 3.3vw;
+    }
+
+    header{
+        height: 140px;
+    }
+
+    .summary{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .summary p{
+        width: 80%;
+    }
+
+    .contact a{
+        margin-left: 20px;
+    }
+
+    #skills-id{
+        flex-basis: 80px;
+
+    }
+    .skills-list{
+        margin-bottom: 20px;
+    }
+
+    .date{
+        width: 100%;
+    }
+    .details{
+        width: 90%;
+    }
+}
+
 BODY{
     padding: 0 16px;
     margin: 0;
@@ -35,7 +100,7 @@ header{
 }
 
 /* flex-container-row */
-#under-header, #summary-content, #skills, #education-div > div, #experience-div > div{
+#under-header, #summary-content, #skills-id, #education-div > div, #experience-div > div{
     display: inline-flex;
     flex-wrap: wrap;
 }
@@ -109,7 +174,7 @@ header{
 }
 
 .date{
-    width: 10%;
+    width: 15%;
     font-weight: bold;
 }
 .details{
@@ -159,68 +224,3 @@ footer{
     margin: auto -16px;
 }
 
-
-@media (max-width: 480px){
-    /* flex-direction-column */
-    #header, #under-header, #summary-content, #skills, #education-div > div, #experience-div > div{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    /* flex-container-row */
-    .skills > div{
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .name{
-        height: 50px;
-    }
-
-    h1{
-        font-size: 7vw;
-    }
-    h2{
-        font-size: 4vw;
-    }
-    h3{
-        font-size: 4.8vw;
-    }
-    p, a, li{
-        font-size: 3.3vw;
-    }
-
-    header{
-        height: 140px;
-    }
-
-    .summary{
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 10px;
-    }
-    .summary p{
-        width: 80%;
-    }
-
-    .contact a{
-        margin-left: 20px;
-    }
-
-    #skills-mobile{
-        flex-basis: 80px;
-
-    }
-    .skills-list{
-        margin-bottom: 20px;
-    }
-
-    .date{
-        width: 100%;
-    }
-    .details{
-        width: 90%;
-    }
-}
