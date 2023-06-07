@@ -84,9 +84,11 @@
 
     .date{
         width: 100%;
+        margin-bottom: 0;
     }
     .details{
         width: 90%;
+        margin-bottom: 20px;
     }
     .details ul{
         width: 78%;
