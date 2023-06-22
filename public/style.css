@@ -207,7 +207,7 @@
         padding: 0;
     }
     .skills-list li{
-        margin: 20px 0 60px 0;
+        margin: 20px 0 20px 0;
     }
 
     .date{
@@ -228,23 +228,42 @@
 }
 
 /* GENERAL */
+h1{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.2vw;
+    font-weight: 900;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.4vw;
+    font-weight: 50;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.4vw;
+}
+p, li, a{
+    font-family: 'Lora', serif;
+}
 hr{
     opacity: 50%;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.104);
 }
 
 header{
-    background-color: rgb(210, 208, 208);
+    background-color: #d2d0d0;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .creation{
     color: rgb(53, 52, 52);
+    font-family: 'Raleway', sans-serif;
 }
 
 .summary p{
     margin-left: 20px;
-    width: 80%;
+    width: 65%;
 }
 
 .contact a{
